@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | SIKHYA</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+    }
+
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+      padding-left: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .about-container, .feedback-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1a237e;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: 600;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    form button {
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #1a237e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1a237e;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SIKHYA</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="test.html">Test</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="texttospeech.html">Text To Speech</a></li>
+        <li><a href="about.html">About</a></li>
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-container">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>SIKHYA</strong>, your gateway to quality online technical education. We specialize in providing industry-relevant courses and exam prep materials across major engineering disciplines such as Computer Science, Electronics, Electrical, Mechanical, and Civil Engineering.</p>
+    <p>Our mission is to make learning simple, accessible, and effective for students of all levels. We are committed to supporting learners in understanding core concepts, acing their exams, and preparing for future careers through hands-on content and community support.</p>
+    <p>With SIKHYA, you're not just learning — you're growing into the professional you aspire to be.</p>
+  </section>
+
+  <section class="feedback-container">
+    <h2>Send Us Your Feedback</h2>
+    <form id="feedbackForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Feedback</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SIKHYA. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Thank you for your feedback!");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
